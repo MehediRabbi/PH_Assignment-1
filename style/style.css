@@ -4,65 +4,67 @@
   font-style: normal;
 }
 
-body {
-  
-  margin: 0;
-  padding: 0;
-}
 
-h1 {
-  font-size: 48px;
-  font-weight: 800;
-  margin: 0;
-}
 
-.upper-head {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header button {
   padding: 10px 20px;
-  background-color: #f0f0f0;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
 }
 
 .intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
   text-align: center;
-  padding: 20px;
- 
-  
+  padding: 60px 20px;
+  background-image: url('/image/Hero-bg.png');
+  background-size: cover;
+  color: black;
 }
 
-.bg-image {
-  position: relative;
-  width: 100%;
-  height: 100vh; 
-  
-  background-size: cover;
-  background-position: center;
-} 
+.intro .developer-img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
 
+.intro h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
+.intro p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-button {
-  background-color: #0d1321;
-  border: none;
-  color: white;
+.intro button {
   padding: 10px 20px;
-  font-size: 15px;
-  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
+
 
 .middle {
   background-color: white; 
   padding: 60px; 
    margin: 150px;  
   border-radius: 8px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  
 }
 
 section.why-web-dev {
@@ -121,7 +123,7 @@ section.why-web-dev {
   margin: 20px; 
 }
 
-/* Styling for the inspiration section */
+/* inspiration section */
 .inspiration {
   text-align: center;
   padding: 20px;
@@ -153,11 +155,12 @@ section.why-web-dev {
   border-radius: 8px;
 }
 
-/* tirget */
+/* target */
 
 
 
 .current-target {
+  padding-top: 120px;
   text-align: center;
   margin: 20px auto;
   width: 80%;
@@ -201,91 +204,60 @@ section.why-web-dev {
   margin-top: 0;
 }
 
-.target a {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 3px;
-  text-decoration: none;
-}
 
-.target a:hover {
-  background-color: #45a049;
-}
 
 
 /* .support  */
-
-
 .support {
-  position: relative;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
-  margin: 150px; 
-  border-radius: 10px; 
-}
-
-.bg-image-handshake {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 10px; 
-}
-
-
-.bg-image-handshake img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px; 
+ 
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-image: url('/image/handshake.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white; 
+  margin: 80px;
+  border-radius: 8px;
 }
 
 
 
-.support h3 {
-  font-size: 36px;
-  font-family: 'Permanent Marker', cursive;
-  margin-bottom: 20px;
-}
-
-.support p {
-  font-size: 18px;
-  font-family: 'Indie Flower', cursive;
-  margin-bottom: 40px;
-}
-
-.support form {
+.image-t {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+/* .support ends */
+
+
+footer {
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.support input {
-  width: 60%;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-  font-size: 16px;
-  font-family: 'Indie Flower', cursive;
+.social-icons {
+  display: flex;
+  justify-content: baseline;
+  gap: 10px;
 }
 
-.support button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  font-size: 16px;
-  font-family: 'Permanent Marker', cursive;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.support button:hover {
-  background-color: #45a049;
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
