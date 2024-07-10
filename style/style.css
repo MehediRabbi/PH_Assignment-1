@@ -64,15 +64,10 @@ header button {
   padding: 60px; 
    margin: 150px;  
   border-radius: 8px; 
-  
-}
-
-section.why-web-dev {
-  
   text-align: center;
-  margin: 20px;
 }
 
+  
 .body-sections {
   display: flex;
   flex-direction: column;
