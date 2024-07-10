@@ -29,7 +29,7 @@ header button {
 .intro {
   text-align: center;
   padding: 60px 20px;
-  background-image: url('Hero-bg.png');
+  background-image: url('./Hero-bg.png');
   background-size: cover;
   color: black;
 }
@@ -213,7 +213,7 @@ section.why-web-dev {
   justify-content: space-between;
   align-items: center;
   padding: 40px 20px;
-  background-image: url('handshake.jpg'); 
+  background-image: url('./handshake.jpg'); 
   background-size: cover;
   background-position: center;
   color: white; 
